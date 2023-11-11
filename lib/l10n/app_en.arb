@@ -1,0 +1,17 @@
+{
+  "app_title": "To Do List",
+  "add_new_task": "Add New Task",
+  "task_title": "Task Title",
+  "task_description": "Task Description",
+  "select_date": "Select Date",
+  "add_task": "Add Task",
+  "language": "Language",
+  "english": "English",
+  "arabic": "Arabic",
+  "mode": "Mode",
+  "light": "Light",
+  "dark": "Dark",
+  "errorField1": "Please Enter Task Title",
+  "errorField2": "Please Enter Task Description"
+
+}

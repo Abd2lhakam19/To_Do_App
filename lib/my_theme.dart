@@ -12,7 +12,7 @@ class MyTheme {
   static Color blackColor = Color(0xff383838);
   static Color backgroundDark = Color(0xff060E1E);
   static Color greyColor = Color(0xffC8C9CB);
-
+  static Color blackDark = Color(0xff141922);
 
   static ThemeData lightTheme = ThemeData(
     scaffoldBackgroundColor: backgroundLight,
@@ -23,13 +23,24 @@ class MyTheme {
     textTheme: TextTheme(
       bodyLarge: GoogleFonts.poppins(
         fontSize: 22,
+        fontWeight: FontWeight.bold,
         color: whiteColor,
+      ),
+      bodyMedium: GoogleFonts.poppins(
+        fontSize: 20,
+        fontWeight: FontWeight.bold,
+        color: blackColor,
+      ),
+      bodySmall: GoogleFonts.poppins(
+        fontSize: 18,
+        color: blackColor,
       ),
     ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       selectedItemColor: primaryLight,
       unselectedItemColor: greyColor,
       elevation: 0,
+      backgroundColor: Colors.transparent
     ),
     floatingActionButtonTheme: FloatingActionButtonThemeData(
       shape: StadiumBorder(
@@ -39,5 +50,43 @@ class MyTheme {
         )
       )
     )
+  );
+  static ThemeData darkTheme = ThemeData(
+      scaffoldBackgroundColor: backgroundDark,
+      appBarTheme: AppBarTheme(
+          backgroundColor: primaryLight,
+          elevation: 0,
+        centerTitle: true,
+      ),
+      textTheme: TextTheme(
+        bodyLarge: GoogleFonts.poppins(
+          fontSize: 22,
+          fontWeight: FontWeight.bold,
+          color: whiteColor,
+        ),
+        bodyMedium: GoogleFonts.poppins(
+          fontSize: 20,
+          fontWeight: FontWeight.bold,
+          color: blackColor,
+        ),
+        bodySmall: GoogleFonts.poppins(
+          fontSize: 18,
+          color: blackColor,
+        ),
+      ),
+      bottomNavigationBarTheme: BottomNavigationBarThemeData(
+          selectedItemColor: primaryLight,
+          unselectedItemColor: whiteColor,
+          elevation: 0,
+          backgroundColor: Colors.transparent
+      ),
+      floatingActionButtonTheme: FloatingActionButtonThemeData(
+          shape: StadiumBorder(
+              side: BorderSide(
+                  color: blackColor,
+                  width: 4
+              )
+          )
+      )
   );
 }
